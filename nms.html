@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="shareimage" itemprop="image" content="https://files.catbox.moe/pwwvv1.png">
+  <title>
+   Nan Mwe San
+  </title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Custom CSS -->
+  	<style>
+  	body {
+    font-family: Arial, sans-serif;
+}
+ 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+ 
+.gallery-item {
+    position: relative;
+    cursor: pointer;
+}
+ 
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+ 
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+ 
+.gallery-item .overlay-content {
+    color: #fff;
+    text-align: center;
+}
+ 
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+ 
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+ 
+.lightbox.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+ 
+        body {
+            font-family: Arial, sans-serif;
+        }
+ 
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+ 
+        .gallery-item {
+            position: relative;
+            cursor: pointer;
+        }
+ 
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+ 
+        .gallery-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+ 
+        .gallery-item .overlay-content {
+            color: #fff;
+            text-align: center;
+        }
+ 
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+ 
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+        }
+ 
+        .lightbox.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+ </style>
+ </head>
+ <body>
+ 	<h1 class="mb-sm-4 text-center">Nan Mwe San</h1>
+      <p class="lead text-center">
+        ဓါတ်ပုံများ
+      </p>
+  <!-- Gallery Section -->
+  <section class="container mt-5" id="gallery">
+   </div>
+    </br>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/jilwnh.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/vhes4o.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/d5etlv.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/dswces.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/2dhumg.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/spyxd0.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/h5nb45.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/kp6gp0.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/ekl18w.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/ty7adg.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/tgt8vc.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/62idva.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/o09563.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/shbjp6.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/guju7r.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/45j9w9.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/4bwygq.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/di3cw0.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/huznfn.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/vm53m5.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/270ttb.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/49x4dj.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/qn5c9s.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/k9arj9.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/oybo1c.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/e87klm.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/otmsuo.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/vy9h07.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/84yb5b.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/bpr5kj.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/nbzy5i.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/djfk9a.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/r39x6c.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/nispqw.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/961ax4.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/46zdlu.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/pv5qzd.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/vj9jc5.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/rbagr0.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/eql1ju.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/wfh5p7.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/l9dsfw.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/qb5krv.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/oztxzr.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/2ccz04.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/7srxfi.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/iix6ld.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/bnemtd.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/xp8f6q.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/9ei5im.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/fxedjx.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/651qgt.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/u0i1lk.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/6jnirh.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/uw6b0y.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/efjhmh.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/quz70v.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/u4bof2.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/c0hbm3.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Nan Mwe San" src="https://files.catbox.moe/k7qri6.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+    </section>
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+   <img alt="Lightbox Image" src=""/>
+  </div>
+  <!-- Bootstrap & jQuery JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+  </script>
+  <!-- Custom JS -->
+  	<script>
+  	$(document).ready(function() {
+    // Open lightbox on gallery item click
+    $('.gallery-item').click(function() {
+        var imageSrc = $(this).find('img').attr('src');
+        $('#lightbox img').attr('src', imageSrc);
+        $('#lightbox').addClass('show');
+    });
+ 
+    // Close lightbox on lightbox click
+    $('#lightbox').click(function() {
+        $(this).removeClass('show');
+    });
+});
+ 
+        $(document).ready(function() {
+            // Open lightbox on gallery item click
+            $('.gallery-item').click(function() {
+                var imageSrc = $(this).find('img').attr('src');
+                $('#lightbox img').attr('src', imageSrc);
+                $('#lightbox').addClass('show');
+            });
+ 
+            // Close lightbox on lightbox click
+            $('#lightbox').click(function() {
+                $(this).removeClass('show');
+            });
+        });</script>
+ </body>
+</html>

@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="shareimage" itemprop="image" content="https://files.catbox.moe/pwwvv1.png">
+  <title>
+   May Pann Chi
+  </title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Custom CSS -->
+  	<style>
+  	body {
+    font-family: Arial, sans-serif;
+}
+ 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+ 
+.gallery-item {
+    position: relative;
+    cursor: pointer;
+}
+ 
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+ 
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+ 
+.gallery-item .overlay-content {
+    color: #fff;
+    text-align: center;
+}
+ 
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+ 
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+ 
+.lightbox.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+ 
+        body {
+            font-family: Arial, sans-serif;
+        }
+ 
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+ 
+        .gallery-item {
+            position: relative;
+            cursor: pointer;
+        }
+ 
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+ 
+        .gallery-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+ 
+        .gallery-item .overlay-content {
+            color: #fff;
+            text-align: center;
+        }
+ 
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+ 
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+        }
+ 
+        .lightbox.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+ </style>
+ </head>
+ <body>
+ 	<h1 class="mb-sm-4 text-center">Chubby</h1>
+      <p class="lead text-center">
+        ဓါတ်ပုံများ
+      </p>
+  <!-- Gallery Section -->
+  <section class="container mt-5" id="gallery">
+   </div>
+    </br>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/0G1Jhh2/1068825427.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/58s2Cfg/1076326531.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/4Zgx5s0/1078530434.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/dQJXRwj/1110607441.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/jz2gmBq/1120913391.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/JdF6kXP/1125519656.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/DDt45pf/1129571585.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/WnZDCzC/113250199.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/pdJLCRQ/1170603622.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/1XNLnwj/1172924773.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/HTX7bZb/1177783524.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/bR0QLzK/118543551.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/1ZFJQfy/1198290718.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/YPdyrqv/1206887882.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/8xz8WqH/1214781628.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/JzFDsKn/1267152097.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/NW0n7sZ/1277389948.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/XYhwX69/1312512079.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/frMfNPY/1329203354.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/VQKvt5D/1340027215.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/xs4M0vN/1356406316.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/q0sZn4S/137667956.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/0r6yfc0/1392558096.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/3C1DZvj/1456509227-jpg-2320-3088.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/znNnTwg/1464880647.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/v3msFR2/1484553947.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/vhk5BWY/151677291.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/Pt5TTSC/1544588907.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/HNDtBvk/1548050982.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/PMQ9CL7/1673778673.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/93rYg5x/1674048799.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/K98MWSS/1690228875.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/pWW2YVL/1814380313.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/cgR53v3/1856594483.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/zJfbCM8/1875959750.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/ch7VnSx/1915087153.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/KhR99Jw/1940775727.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/cwr3ZgZ/1941576640.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/bsvz6km/1948023196.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/wsQ5q4s/1963146385.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/BfR1hr2/1967234738.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/zm8FXgS/2003672369.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/zNvrxRK/2025315443.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/Y0NCyf9/2031997077.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/Cs2TX58/2036433713.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/3fh9jvc/2056498818.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/ssXyNN9/2058344435.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/tZyQmjp/2074779123.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/xG5xcc3/2104297057.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/f0R7qbJ/2110148659.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/2kYxY2Y/232432332.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/cxSy2pd/315263225.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/gPQ9vB2/337291033-jpg-3024-4032.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/mSP4g3x/354071231.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/QC26WW4/374172473.png"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/hD7HdgP/374695186.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/8PB6xmG/387756700.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/GM4tLVH/388758387.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/vhvZVfG/396095730.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/7VFKTY9/42589768.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/QQ6t9V2/429243564.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/drfgCvk/449414672.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/4VrchWf/455043666.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/fvfwNjd/45550454.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/qgqWtGB/4KicooT8.png"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/bRvNQ2w/516615044.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/0FG7PFX/544005060.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/k4qDzfj/552433362.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/XWjK7C7/565836551.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/YdtqYwJ/5a8a66a11c0b4.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/KmWMfn6/5fE5TdbK.png"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/1qr3sxV/5g6zglLT.png"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/4T2m3dY/620735448.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/4pkD03s/68584673.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/QYgcP1L/722393978.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/m9RPKbp/792156978.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/ZzQjYmV/826569239.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/QJ9GyNV/8975768.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/3RRSrPQ/897933227.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/tbyn0N5/918478635.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/9TT7mcV/943213428.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/C0NHz56/978142469.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/VLfjYhx/99T2v1mG.png"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/hFq8yRV/Assamese-Beautiful-Girl-Nude-Selfie-Pics-2.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/S033m9Q/Assamese-Beautiful-Girl-Nude-Selfie-Pics-3.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+</br>
+<div class="gallery-item">
+     <img alt="Chubby" src="https://i.ibb.co/N9shkJh/Assamese-Beautiful-Girl-Nude-Selfie-Pics-4.jpg"/>
+     <div class="overlay">
+      <div class="overlay-content">
+      </div>
+     </div>
+    </div>
+    </br>
+    <nav aria-label="Search results pages">
+        <ul class="pagination justify-content-center">
+          <li class="page-item active">
+            <a href="#" class="page-link"
+              >1<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="page-item"><a href="/blog/chubby2.html" class="page-link">2</a></li>
+          <li class="page-item"><a href="/blog/chubby3.html" class="page-link">3</a></li>
+        </ul>
+      </nav>
+    </section>
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+   <img alt="Lightbox Image" src=""/>
+  </div>
+  <!-- Bootstrap & jQuery JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+  </script>
+  <!-- Custom JS -->
+  	<script>
+  	$(document).ready(function() {
+    // Open lightbox on gallery item click
+    $('.gallery-item').click(function() {
+        var imageSrc = $(this).find('img').attr('src');
+        $('#lightbox img').attr('src', imageSrc);
+        $('#lightbox').addClass('show');
+    });
+ 
+    // Close lightbox on lightbox click
+    $('#lightbox').click(function() {
+        $(this).removeClass('show');
+    });
+});
+ 
+        $(document).ready(function() {
+            // Open lightbox on gallery item click
+            $('.gallery-item').click(function() {
+                var imageSrc = $(this).find('img').attr('src');
+                $('#lightbox img').attr('src', imageSrc);
+                $('#lightbox').addClass('show');
+            });
+ 
+            // Close lightbox on lightbox click
+            $('#lightbox').click(function() {
+                $(this).removeClass('show');
+            });
+        });</script>
+ </body>
+</html>
