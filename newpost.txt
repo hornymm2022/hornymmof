@@ -1,9 +1,0 @@
-<p style="text-align: center;"><img src="Thumbnail IMG" alt="HornyMM" style="width:80px;height:120px;"></p>
-        <a href="/blog/#" class="list-group-item list-group-item-action" aria-current="true">
-             <div class="d-flex w-100 justify-content-between">
-                 <h5 class="mb-1">NAMETitle</h5>
-                 <small>DATE</small>
-             </div>
-             <p class="mb-1"> များကိုဒီမှာကြည့်ပါ....</p>
-             </a>
-            </br>
